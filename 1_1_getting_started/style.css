@@ -15,6 +15,7 @@ h3 {
 }
 
 p {
-  font-size: 1em;
-  color: pink;
+  font-size: 3em;
+  color:blue;
+  font-family: Helvetica;
 }
