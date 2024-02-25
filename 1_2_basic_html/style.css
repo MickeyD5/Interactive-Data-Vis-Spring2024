@@ -15,6 +15,16 @@ h3 {
   margin: 0.25em 0;
 }
 
-p {
-  font-size: 1em;
+th, td {
+  font-size:2em;
+  border-color: #96D4D4;
+  border-style: dotted;
+}
+
+caption {
+font-size: 5em;
+}
+
+.tr:hover {
+  background-color: coral;
 }
