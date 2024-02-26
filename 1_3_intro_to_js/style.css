@@ -21,3 +21,16 @@ p {
 section {
   padding: 2em 0;
 }
+
+.button {
+  transition-duration: 0.4s;
+  background-color: #008CBA;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #f44336; 
+  color: white;
+  
+}
