@@ -23,7 +23,7 @@ margin = { top: 20, bottom: 50, left: 60, right: 40 };
 
   const colorScale = d3.scaleThreshold()
   .domain([0, 1, 10, 100, 1000, 5000])
-  .range(d3.schemeBlues[5]);
+  .range(d3.schemeBlues[6]);
 
   // SPECIFY PROJECTION
   const projection = d3.geoMercator()
@@ -54,7 +54,7 @@ const path = d3.geoPath(projection)
         .attr("d", d => path(d));
 
 
-  // Legend Attempt-> can't get artist title to show over legend
+  //Legend Attempt-> can't get artist title to show over legend
   const g = svg.append("svg")
     
     .attr("class", "legendThreshold")
@@ -66,7 +66,7 @@ const path = d3.geoPath(projection)
     .style("font-size","12px")
     .text("Artist Count");
 
-const labels = ['0', '1-10','10-100', '100-1000', '> 5000'];
+const labels = ['0', '1-10','10-100', '100-1000','1000-5000', '> 5000'];
 
 const legend = d3.legendColor()
     .labels(d=> { return labels[d.i]; })
@@ -75,7 +75,7 @@ const legend = d3.legendColor()
     .scale(colorScale);
 
     svg.select(".legendThreshold")
-    .call(legend);
+    .call(legend); 
 
     
 
