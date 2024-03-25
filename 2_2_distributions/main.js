@@ -31,7 +31,7 @@ const filteredData = data.filter(d =>
 {return d["Artist Lifespan"] > 0 && d["Artist Lifespan"] <= 100;})
 
     //SizeScale
-    const CircleSize= d3.scaleLinear()
+    const CircleSize= d3.scaleSqrt()
       .domain([0, d3.max(filteredData, d=> d["Artist Lifespan"])])
       .range([2,9]);
 
