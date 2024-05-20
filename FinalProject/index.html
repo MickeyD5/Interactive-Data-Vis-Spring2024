@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Data Visualization Final Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  </head>
+  <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="../lib/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src="main.js"></script>
+  <body>
+    
+    <div id ="main">
+      <h1>Insights into MoMA Data:<span style = "display: block">The 21st Century(2010-2020)</span></h1>
+      <p> For this project, I wanted to keep my scope simple, so I focused on the 21st century, specifically the years 2010-2020.
+        I used a total of three csv files to make the data easier to work with by taking only the fields I wanted to use for each
+        sub-topic I addressed. It was fun to work on because I got the chance to attempt different chart designs that I didn't
+        get to do during the assignments. Getting each chart to work the way I wanted to was very rewarding and the more I attempted various ways
+        to reach a solution, the more I understood the code behind it. The following graphs explore artwork acquisitions on a whole and broken down into sub-categories.
+       </p>
+
+        <h2>Total Artwork Acquisitions</h2>
+      <div id="container1" > </div>
+      <p>The first graph is a gradient line chart depicting the trend of total artwork acquisitions over a specific period of time.
+        It's interesting to note that <span style = "color: red; font-weight:bold"><em>2015</em> saw the highest acquisition count recorded at <em> 3,858 </em> and <em>2020</em> saw the lowest recorded at <em>228</em></span>. 
+        While I am not 100% certain why some years see more acquisions than others, the answer may lie in the criteria MoMA's Architecture and Design collection 
+        curators consider: Form and Meaning, Function and Meaning, Innovation, Cultural Impact, Process and Necessity. By taking these criteria into account, it is possible some artworks 
+        meet more of them depending on the year acquired. Also, though it is not depicted here, it is beyond impressive that MoMA originally began with only eight prints and one drawing back in 1929 but is now flourishing with a collection that continues to grow
+        surpassing 200,000 artworks in paintings, sculptures, drawings, prints, photographs, architectural models and drawings, and design objects.
+       </p>
+      <h2>Acquisitions by Gender</h2>
+      <label for="gender-select">Gender Selection</label>
+      <select id="gender-select">
+        <option value = "Male Count">Male</option>
+        <option value = "Female Count">Female</option>
+      </select>     
+        <div id="container2"> </div>
+        <p>Continuing the focus on artwork acquisitions, we delve into what it looks like across genders through a bar chart.  
+          We see that the highest acquisiton count for <span style ="color:#619CFF;font-weight:bold">males was in 2015</span> whereas for <span style ="color:#F8766D;font-weight:bold">females it was in 2012.</span>
+        Both have the lowest count in 2020. However, it is clear that overall artworks featured by male artists exceed those featured by females.
+        The overall count for males across the ten years displayed would be <span style ="color:#619CFF;font-weight:bold">14725</span> and for females
+        it's <span style ="color:#F8766D;font-weight:bold">4989</span>, leaving a difference of almost 10,000(the precise difference is 9,736). Nonetheless, the artworks acquired by female artists have consistenly remained over the 100s
+        except for 2020 so there is hope that they will continue to increase, especially since MoMA prides itself on promoting diversity.
+          
+        </p>
+        <h2>Acquisitions by Classification for 2015</h2>
+        <label for="year-select">Year Selection</label>
+      <select id="year-select">
+        <option value = "2010">2010</option>
+        <option value = "2011">2011</option>
+        <option value = "2013">2013</option>
+        <option value = "2014">2014</option>
+        <option value = "2015" selected>2015</option>
+      </select>     
+        <div id="container3"> </div>
+        <p>Finally, we examine artwork acquisitions by classification from 2010-2015 with a focus on 2015 since that year had the highest acquisition count. <span style = "color: red; font-weight:bold"> The top four categories for that year were: Print, Photography,
+          Design and Illustrated Book.</span> Photograph and Print acquisions especially were consistenly high in numbers across the the five years depicted.
+          According to moma.org, MoMA's holdings of prints, illustrated books, and multiples include more than 60,000 works, comprising the world's most extensive collection of modern and contemporary prints and illustrated books. The website also 
+          noted that their paintings and sculpture department features over 3,600 art pieces dated from the late 19th centuary to the present. It is lauded as the world's largest and most inclusive collection of modern painting and sculpture
+        As for their photography collection, wikipedia states that it consists of over 25,000 works works by photographers, journalists, scientists, entrepreneurs, and amateurs, and is regarded as one of the most important in the world.
+       The film department and architecture and design aren't to be overlooked either. The latter consists of 28,000 works including architectural models, drawings, and photographs with one of the highlights of the collection being the Mies van der Rohe Archive.
+       The former is ranked one of the world's finest museum archives of international film art and boasts over 25,000 titles and ranks. Looking at these figures, it makes sense that acqusitions for certain classifications had high numbers.
+        </p>
+    </div>
+   
+    
+  </body>
+</html>

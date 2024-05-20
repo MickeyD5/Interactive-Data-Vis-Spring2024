@@ -1,0 +1,64 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  margin:0;
+  padding: 0;
+  background-color: peachpuff;
+  
+
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 3em;
+  margin: 0;
+  /*margin: 0.25em 0;*/
+  text-align:center;
+  color: black;
+  border-bottom: solid 3px #9c198b;
+}
+
+h2 {
+  
+  color: black;
+}
+
+
+#main{
+  
+  width: auto;
+  
+
+  
+}
+
+
+p {
+  font-size: 20px;
+  color:black;
+  text-align:center;
+
+}
+
+
+.label {
+  font-size: 12px;
+  text-anchor: middle;
+  font-weight: bold;
+
+}
+
+
+.Linelabel {
+  font-size: 12px;
+  text-anchor: middle;
+  font-weight: bold;
+  /*fill: white;
+  	text-shadow:
+  	-1px -1px 0 #222,
+  	1px -1px 0 #222,
+  	-1px 1px 0 #222,
+  	1px 1px 0 #222;*/
+  
+}
+
